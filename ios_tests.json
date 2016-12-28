@@ -1,15 +1,15 @@
 {
 	"number_of_simulators": "1",
 	"directory": "/Users/andrew.katsikas/PycharmProjects/dev_ops/",
-	"tests_dir": “uitests”,
+	"tests_dir": "uitests",
 	"simulator_dir": "sim_devices",
 	"commands_etc": {
 		"checkout_branch": "git checkout develop",
-		"project_string": “project”,
-		"clone_statement": "git clone https://bitbucket.org/URL”,
+		"project_string": "project",
+		"clone_statement": "git clone https://bitbucket.org/URL",
 		"pod_install": "pod install",
 		"build_simulators": "pxctest boot-simulators --deviceset %s --destination 'name=iPad Air 2,os=iOS 10.2'",
 		"xcode_build": "xcodebuild -IDEBuildLocationStyle=Custom -IDECustomBuildLocationType=Absolute -IDECustomBuildProductsPath='%s/build/Products' -scheme ‘project’ -workspace ‘project.xcworkspace' -destination 'platform=iOS Simulator,name=iPad Air 2,OS=10.2' build-for-testing",
-		"run_test": "pxctest run-tests --output %s --deviceset %s --destination 'name=iPad Air 2,os=iOS 10.2' --testrun %s/build/Products/\”project_iphonesimulator10.2-x86_64.xctestrun\" --only ‘uitests%s’”
+		"run_test": "pxctest run-tests --output %s --deviceset %s --destination 'name=iPad Air 2,os=iOS 10.2' --testrun %s/build/Products/\"project_iphonesimulator10.2-x86_64.xctestrun\" --only ‘uitests%s’"
 		}
 }
